@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numreos com JS</title>
+    <style>
+        body { font: 12pt Arial; }
+        button { font-size: 12pt; padding: 30px; }
+    </style>
+</head>
+<body>
+    <h1>Interagindo com um botão</h1>
+    
+    <button onclick="somar()">iniciar soma</button>
+    
+    <section id="res">
+    
+        <p> o resultado vem aqui..</p>
+    
+    </section>
+    <script>
+        function somar(){
+            let n1 = Number(window.prompt('digite um numero: '))
+            let n2 = Number(window.prompt('digite outro numero: '))
+            soma = n1 + n2
+            
+            letres =document.querySelector('selction#res')
+            res.innerHTML = `<p>a soma entre <mark>${n1}</mark> e <mark>${n2}
+                </mark> é igual a <strong>${soma}</strong>!</p>`
+            }
+
+    </script>
+</body>
+</html>
