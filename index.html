@@ -1,35 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Numreos com JS</title>
+    <title>Tabelas</title>
     <style>
-        body { font: 12pt Arial; }
-        button { font-size: 12pt; padding: 30px; }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+        
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <h1>Interagindo com um botão</h1>
-    
-    <button onclick="somar()">iniciar soma</button>
-    
-    <section id="res">
-    
-        <p> o resultado vem aqui..</p>
-    
-    </section>
-    <script>
-        function somar(){
-            let n1 = Number(window.prompt('digite um numero: '))
-            let n2 = Number(window.prompt('digite outro numero: '))
-            soma = n1 + n2
+    <h1>Mesclagem de Células</h1>
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
             
-            letres =document.querySelector('selction#res')
-            res.innerHTML = `<p>a soma entre <mark>${n1}</mark> e <mark>${n2}
-                </mark> é igual a <strong>${soma}</strong>!</p>`
-            }
-
-    </script>
+        </tr>
+        <tr>
+            <td rowspan="3">D</td>
+            <td>E</td>
+            <td rowspan="2">F</td>
+        </tr>
+        <tr>
+            
+            <td>H</td>
+            
+        </tr>
+        <tr>  
+            <td colspan="2">M</td>
+        </tr>
+    </table>
 </body>
 </html>
